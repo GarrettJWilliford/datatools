@@ -6,6 +6,7 @@ import numpy as np
 import time
 
 
+##### This function is used for the subset function()
 def one_filter(data, argument, return_dict):
     return_data = {argument[0] : []}
     row = data.shape[0]
@@ -20,8 +21,11 @@ def one_filter(data, argument, return_dict):
     if return_dict == True:
         return pd.DataFrame.from_dict(return_data)
 
+# Used to filter with tuples For example (the_data, ('Name_of_column', 'Name_of_what_you_want_to_filter_by'), ('Another Column', True))
+# use true value to return all data in column.
+# this applies a multifilter into one line of code
 
-def subset(data, *args): # Used to filter stuff with tuples. For example (the_data, (Name_of_column, Name_of_what_you_want_to_filter_by)) use true value to return all data in column
+def subset(data, *args): 
     final_num = []
     first_instance = True
     final_dataset = {}
@@ -52,7 +56,8 @@ def subset(data, *args): # Used to filter stuff with tuples. For example (the_da
     return pd.DataFrame.from_dict(final_dataset)
     
     
-    
+ 
+
 def remove_nan(nlist):
     check = 0
     if nlist == dict(nlist):
