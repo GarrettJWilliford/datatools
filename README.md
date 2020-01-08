@@ -1,6 +1,4 @@
 # datatools
 
-I made this so I can deal with datasets a little easier. If you have any questions or something is not working leave a comment
-and Ill try to help out. I have also never used github before so feel free to tell me if thers something else you would prefer 
-I put on here, 
-thanks
+I made this program for my entrance into codeup, I was working with dataframes and had very little understanding 
+of pandas at the time, it mostly converts dataframes to dictionaries and works with them from there, I find the filter_data() function to be quite useful and use it occasionaly to filter through multiple values
